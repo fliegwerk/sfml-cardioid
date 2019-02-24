@@ -8,9 +8,9 @@ a {
 
 h2.groupheader,
 div.header {
-    border-color: #2d2d46;
+    border-color: #2D2D48;
     border-width: 2px;
-    background: none;
+    background: transparent;
 }
 
 #titlearea {
@@ -19,21 +19,20 @@ div.header {
 }
 
 #main-nav ul {
-    background: #2d2d46;
+    background: #2D2D48;
     color: white;
 }
 
 #main-nav ul * {
     color: white;
 }
-
 .sm-dox a, .sm-dox a:focus, .sm-dox a:active, .sm-dox a:hover, .sm-dox a.highlighted {
-    background: none;
+    background: transparent;
     text-shadow: none;
 }
 
 .has-submenu-highlighted {
-    background: #2d2d46;
+    background: #2D2D48;
 }
 
 #MSearchBox {
@@ -43,7 +42,7 @@ div.header {
 .memtitle, .memproto, dl.reflist dt {
     border: none;
     box-shadow: none;
-    background: #2d2d46;
+    background: #2D2D48;
     color: white;
     text-shadow: none;
 }
@@ -57,7 +56,7 @@ div.header {
 }
 
 .ui-resizable .ui-resizable-handle {
-    background: #2d2d46;
+    background: #2D2D48;
     width: 2px;
 }
 
@@ -66,24 +65,32 @@ div.header {
 }
 
 .sm-nowrap * {
-    background: #2d2d46;
+    background: #2D2D48;
 }
 
 .sm-dox ul a, .sm-dox ul a:focus, .sm-dox ul a:hover, .sm-dox ul a:active {
-    background-color: transparent;
+    background: transparent;
 }
 
 .sm-dox ul {
-    border: 2px solid #2d2d46
+    border: 2px solid #2D2D48
 }
 
 #nav-tree .item.selected {
-    background: #2d2d46;
+    background: #2D2D48;
     color: white;
 }
 
 #nav-tree a {
     display: inline-block;
-    color: #2d2d46;
+    color: #2D2D48;
     padding: 0.3em;
+}
+
+.sm-dox ul a:hover {
+    background-image: none;
+}
+
+.sm-dox a span.sub-arrow {
+    border-top-color: white;
 }
