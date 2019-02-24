@@ -10,4 +10,4 @@ docs:
     - ls documentation
   artifacts:
     paths:
-      - documentation/html/
+      - documentation/
