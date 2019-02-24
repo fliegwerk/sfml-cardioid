@@ -1,5 +1,7 @@
 # sfml-cardioid
 
+![Screenshot of the UI of the program](screenshot.png)
+
 Documentation for this project will get automatically generated and can be found at 
 https://fliegwerk.gitlab.io/sfml-cardioid/documentation/html/ (please note that the docs use JavaScript from a CDN 
 site, so keep the privacy-related topics in mind when opening the site).
