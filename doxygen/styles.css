@@ -136,5 +136,5 @@ div.header {
 }
 
 .contents a:visited {
-    color: white;
+    color: inherit;
 }
