@@ -2,7 +2,7 @@ image: alpine
 
 docs:
   script:
-    - apk update && apk add doxygen
+    - apk update && apk add doxygen && apk add latex && apk add dvips && apk add gs
     - doxygen Doxyfile
     - ls documentation
   artifacts:
