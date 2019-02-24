@@ -7,6 +7,7 @@ docs:
     - ls
     - ls doxygen
     - ls doxygen/documentation
+    - ls documentation
   artifacts:
     paths:
-      - doxygen/documentation/html/
+      - documentation/html/
