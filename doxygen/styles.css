@@ -98,3 +98,26 @@ div.header {
 #nav-tree .label a {
     padding: 0.4em;
 }
+
+/* FOOTER */
+.navpath ul {
+    background: #2d2d48;
+    color: white;
+    border: none;
+    box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.1)
+}
+
+.navpath ul * {
+    color: white;
+    text-shadow: none;
+}
+
+.navpath li.navelem a {
+    color: white;
+    text-shadow: none;
+
+}
+
+.navpath li.footer {
+    color: white;
+}
