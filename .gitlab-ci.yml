@@ -1,10 +1,12 @@
 image: alpine
 
-docs:
+pages:
   script:
     - apk update && apk add doxygen && apk add latex && apk add dvips && apk add gs
     - doxygen Doxyfile
+    - mkdir public
     - ls documentation
+    - mv documentation public
   artifacts:
     paths:
-      - documentation/
+      - public/
