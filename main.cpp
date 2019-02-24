@@ -6,7 +6,16 @@
 unsigned int window_size = 1280;
 const int count = 640;
 
+/**
+ * Draws a white line from the given start point to the given end point
+ *
+ * Runs in \f$O(1)\f$
+ * @param window The RenderWindow in which the line gets drawn
+ * @param start The starting point of the line
+ * @param end  The end point of the line
+ */
 void line(sf::RenderWindow *window, sf::Vector2i *start, sf::Vector2i *end) {
+    // Create vertex
     sf::Vertex line[] =
             {
                     sf::Vertex(sf::Vector2f(end->x, end->y)),
@@ -15,9 +24,18 @@ void line(sf::RenderWindow *window, sf::Vector2i *start, sf::Vector2i *end) {
 
     line->color = sf::Color::White;
 
-    window->draw(line, 2, sf::Lines);
+    window->draw(line, 2, sf::Lines); // Draw a line with 2 segments
 }
 
+/**
+ * Calculates the coordinates \f$(x,y)\f$ of a point on a circle, offset by an angle \f$\varphi\f$.
+ *
+ * Runs in \f$O(1)\f$
+ * @param angle The angle \f$\varphi\f$ in which the angle is offset clockwise from \f$(c_x, c_y - r)\f$
+ * @param radius The circle's radius \f$r\f$
+ * @param center The center coordinates of the circle \f$(c_x,c_y)\f$
+ * @return The coordinates of the point
+ */
 sf::Vector2i *pointOnCircle(double angle, const float radius, sf::Vector2i *center) {
     // Calculate point on unit circle
     sf::Vector2f unitCirclePoint(static_cast<float>(sin(M_PI - angle)), static_cast<float>(sin(1.5 * M_PI - angle)));
@@ -35,6 +53,16 @@ sf::Vector2i *pointOnCircle(double angle, const float radius, sf::Vector2i *cent
     return new sf::Vector2i(static_cast<int>(unitCirclePoint.x), static_cast<int>(unitCirclePoint.y));
 }
 
+/**
+ * Draws all the lines
+ *
+ * Runs in \f$O(n)\f$, where \f$n\f$ is the count, i.e., the number of divisions of the circle.
+ * @param window The window the lines get drawn in
+ * @param radius The radius of the circle
+ * @param center The center coordinates of the circle, relative to the top-left point of the window
+ * @param count The count, i.e., the number of divisions of the circle.
+ * @param multiplier The multiplier
+ */
 void drawLines(sf::RenderWindow *window, float radius, sf::Vector2i *center, const int count, const double multiplier) {
     double angleIncrement = 2 * M_PI / count;
 
