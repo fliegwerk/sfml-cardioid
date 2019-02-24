@@ -3,10 +3,7 @@ image: alpine
 docs:
   script:
     - apk update && apk add doxygen
-    - doxygen doxygen/Doxyfile
-    - ls
-    - ls doxygen
-    - ls doxygen/documentation
+    - doxygen Doxyfile
     - ls documentation
   artifacts:
     paths:
