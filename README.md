@@ -1,4 +1,4 @@
-# SFML Time Tables Cardioid
+# SFML Times Tables Cardioid
 
 ![Screenshot of the UI of the program](screenshot.png)
 
