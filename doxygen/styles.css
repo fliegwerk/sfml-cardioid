@@ -1,5 +1,5 @@
-a, h2.groupheader {
-    color: #4646a2;
+h2.groupheader {
+    color: #2D2D48;
 }
 
 a {
@@ -84,7 +84,7 @@ div.header {
 #nav-tree a {
     display: inline-block;
     color: #2D2D48;
-    padding: 0.3em;
+    padding: 0.4em;
 }
 
 .sm-dox ul a:hover {
@@ -93,4 +93,8 @@ div.header {
 
 .sm-dox a span.sub-arrow {
     border-top-color: white;
+}
+
+#nav-tree .label a {
+    padding: 0.4em;
 }
