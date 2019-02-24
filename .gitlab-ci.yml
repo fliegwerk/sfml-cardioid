@@ -4,6 +4,8 @@ docs:
   script:
     - apk update && apk add doxygen
     - doxygen doxygen/Doxyfile
+    - ls doxygen
+    - ls doxygen/documentation
   artifacts:
     paths:
       - doxygen/documentation/html/
