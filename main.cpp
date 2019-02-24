@@ -11,7 +11,18 @@
 #include <SFML/Graphics.hpp>
 #include <cmath>
 
+/**
+ * The width and height of the (square) window. By default, it's `1280`, corresponding to 1280px.
+ */
 unsigned int window_size = 1280;
+
+/**
+ * The amount of lines / divisions of the circle present in the project. This can be adjusted to fit 
+ * one's needs. It should be noted, however, that the time it takes to render a frame is linearly proportional to this
+ * number, and too many lines can mean worse results (since the limited amount of pixels and anti-aliasing decrease the
+ * quality of the image). Therefore, choosing this value is a balancing and there is no "correct" value (although even
+ * numbers work significantly better).
+ */
 const int count = 640;
 
 /**
