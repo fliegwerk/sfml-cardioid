@@ -130,3 +130,7 @@ div.header {
 .navpath li.footer {
     color: white;
 }
+
+.contents a:visited {
+    color: white;
+}
