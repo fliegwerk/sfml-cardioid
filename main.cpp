@@ -1,3 +1,11 @@
+/** @file      main.cpp
+ * @brief      Cardioid program
+ * @details    An SFML application that creates times table cardioid patterns
+ * @author     Pablo Klaschka
+ * @copyright  Copyright (c) 2019 by Pablo Klaschka and fliegwerk. All rights reserved.
+ */
+
+
 #include <iostream>
 #include <SFML/System.hpp>
 #include <SFML/Graphics.hpp>
