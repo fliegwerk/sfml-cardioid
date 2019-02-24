@@ -18,6 +18,10 @@ div.header {
     padding-bottom: 1em;
 }
 
+#main-nav {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
 #main-nav ul {
     background: #2D2D48;
     color: white;
@@ -26,9 +30,19 @@ div.header {
 #main-nav ul * {
     color: white;
 }
+
+#nav-tree .item {
+    padding: 0.3em;
+}
 .sm-dox a, .sm-dox a:focus, .sm-dox a:active, .sm-dox a:hover, .sm-dox a.highlighted {
     background: transparent;
     text-shadow: none;
+}
+
+.memdoc, dl.reflist dd {
+    border: none;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    background-image: none;
 }
 
 .has-submenu-highlighted {
@@ -84,7 +98,6 @@ div.header {
 #nav-tree a {
     display: inline-block;
     color: #2D2D48;
-    padding: 0.4em;
 }
 
 .sm-dox ul a:hover {
@@ -93,10 +106,6 @@ div.header {
 
 .sm-dox a span.sub-arrow {
     border-top-color: white;
-}
-
-#nav-tree .label a {
-    padding: 0.4em;
 }
 
 /* FOOTER */
