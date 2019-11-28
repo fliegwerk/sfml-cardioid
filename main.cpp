@@ -67,8 +67,6 @@ sf::Vector2i *pointOnCircle(double angle, const float radius, sf::Vector2i *cent
     unitCirclePoint.x += center->x;
     unitCirclePoint.y += center->y;
 
-    delete center;
-
     return new sf::Vector2i(static_cast<int>(unitCirclePoint.x), static_cast<int>(unitCirclePoint.y));
 }
 
@@ -117,8 +115,6 @@ int main() {
             if (event.type == sf::Event::MouseMoved) {
                 sf::Vector2i globalPosition = sf::Mouse::getPosition(window);
                 multiplier = 20.0 * globalPosition.y / window_size + 1.1;
-                // std::cout << "Multiplier: " << multiplier << "\n";
-                delete &globalPosition;
             }
         }
 
