@@ -25,5 +25,5 @@ numbers work significantly better).
 
 ## Contributors
 Contributors so far include:
-- @pklaschka (Main project contributor)
-- @lrichter (CMakeLists.txt)
+- [@pklaschka](https://github.com/pklaschka) (Main project contributor)
+- [@fussel178](https://github.com/fussel178) (CMakeLists.txt)
